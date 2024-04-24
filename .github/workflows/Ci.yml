@@ -1,0 +1,31 @@
+name: Compile and Lint 🔨
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Yarn Install 📦
+        run: |
+          yarn
+      - name: Linting 🧹
+        run: |
+          yarn lint
+      - name: Fetch OpenRCT2 Scripting Api
+        run: |
+          cd lib
+          sh FetchOpenRCT2Api.sh
+          cd ..
+      - name: Compiler 🏗️
+        run: |
+          yarn build
