@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "description": "A plugin for OpenRCT2 that allows you to edit the soft guest cap.",
   "scripts": {
     "start": "nodemon --watch ./src --ext js,ts --exec \"npm run build:dev\"",
     "build": "rollup --config rollup.config.js --environment BUILD:production",
     "build:dev": "rollup --config rollup.config.js",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
