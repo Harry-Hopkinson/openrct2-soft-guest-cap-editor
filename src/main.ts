@@ -40,7 +40,7 @@ export const allWidgets = window({
       text: "Current Guest Cap",
       onClick: () => {
         park.postMessage(
-          `Your current soft guest cap is ${park.suggestedGuestMaximum}`
+          `Your current soft guest cap is ${park.suggestedGuestMaximum}`,
         );
       },
       height: "23px",
