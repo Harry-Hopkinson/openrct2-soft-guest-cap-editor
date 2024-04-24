@@ -1,7 +1,16 @@
-import { button, label, textbox, window, store } from "openrct2-flexui";
+import {
+  button,
+  label,
+  textbox,
+  window,
+  store,
+  checkbox,
+  Bindable,
+  ElementVisibility,
+} from "openrct2-flexui";
 
 let suggestedGuestMaximum = store("");
-let setGuestCap = false;
+let setGuestCap: Bindable<ElementVisibility> = "hidden";
 
 export const allWidgets = window({
   title: "OpenRCT2 Soft Guest Cap Editor",
@@ -16,19 +25,19 @@ export const allWidgets = window({
       onChange: (text: string) => {
         suggestedGuestMaximum.set(text);
       },
+      visibility: setGuestCap,
     }),
-    button({
+    checkbox({
       text: "Set Guest Cap",
-      onClick: () => {
-        setGuestCap = true;
+      onChange: (checked) => {
+        setGuestCap = checked ? "visible" : "hidden";
       },
-      height: "23px",
     }),
     button({
       text: "Current Guest Cap",
       onClick: () => {
         park.postMessage(
-          `Your current soft guest cap is ${park.suggestedGuestMaximum}`,
+          `Your current soft guest cap is ${park.suggestedGuestMaximum}`
         );
       },
       height: "23px",
