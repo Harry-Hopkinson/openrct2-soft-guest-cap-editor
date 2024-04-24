@@ -1,6 +1,17 @@
-import { button, checkbox, label, textbox, window } from "openrct2-flexui";
+import {
+  WritableStore,
+  store,
+  button,
+  checkbox,
+  label,
+  textbox,
+  window,
+} from "openrct2-flexui";
 
 let suggestedGuestMaximum: number = 0;
+let currentGuestMaximum: WritableStore<number> = store(
+  park.suggestedGuestMaximum,
+);
 let activate: boolean = false;
 let event: any;
 
@@ -29,6 +40,7 @@ export const allWidgets = window({
         if (checked) {
           event = context.subscribe("park.calculateGuestCap", (e) => {
             e.suggestedGuestMaximum = suggestedGuestMaximum;
+            currentGuestMaximum.set(suggestedGuestMaximum);
           });
         } else if (event) {
           event.dispose();
