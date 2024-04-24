@@ -27,7 +27,7 @@ export const allWidgets = window({
         "This is the maximum number of guests that will be allowed in your park",
     }),
     textbox({
-      text: suggestedGuestMaximum.toString(),
+      text: currentGuestMaximum.get().toString(),
       onChange: (text: string) => {
         suggestedGuestMaximum = Number(text);
       },
