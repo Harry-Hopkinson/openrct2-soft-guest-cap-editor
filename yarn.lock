@@ -317,9 +317,9 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
 openrct2-flexui@^0.1.0-prerelease.15:
-  version "0.1.0-prerelease.18"
-  resolved "https://registry.yarnpkg.com/openrct2-flexui/-/openrct2-flexui-0.1.0-prerelease.18.tgz#e3139815cd34c3ee686e8d5aed4d6ca7d92870dc"
-  integrity sha512-hEqsneLzyFlZIqNai4X/xXawE53HCvyHnuLXOp82WTcKcHxJe2tu0MNk4tjXSCz46kyFWhSt06KvZoFSS7G15Q==
+  version "0.1.0-prerelease.20"
+  resolved "https://registry.yarnpkg.com/openrct2-flexui/-/openrct2-flexui-0.1.0-prerelease.20.tgz#60f0e15534abf6a6f416d407221f4ec8c082ab44"
+  integrity sha512-yKBPLjsztQVDwrgs52N5bfPOgByYz4wfF5ukROOdEj+1gKzwIHR4zrjdwmyehGWHYKM7w8Ax5bd8PrCnhg+6Qg==
 
 path-parse@^1.0.7:
   version "1.0.7"
