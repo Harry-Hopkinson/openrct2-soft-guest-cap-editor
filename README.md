@@ -12,4 +12,4 @@ Download the Javascript file from the releases page and place it in your OpenRCT
 
 ## Thanks
 
-This plugin was built using Bassie's Flex UI library. You can find it [here](https://github.com/Basssiiie/OpenRCT2-FlexUI).
+Many thanks to Bassie - firstly I used their Flex UI library. You can find it [here](https://github.com/Basssiiie/OpenRCT2-FlexUI). Also thanks for the help with the [PR](https://github.com/OpenRCT2/OpenRCT2/pull/21521).
