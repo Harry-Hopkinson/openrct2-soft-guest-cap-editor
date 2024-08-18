@@ -38,7 +38,7 @@ export const allWidgets = window({
       onChange: function (checked) {
         activate = checked;
         if (checked) {
-          event = context.subscribe("park.calculateGuestCap", (e) => {
+          event = context.subscribe("park.guest.softcap.calculate", (e) => {
             e.suggestedGuestMaximum = suggestedGuestMaximum;
             currentGuestMaximum.set(suggestedGuestMaximum);
           });
