@@ -33,7 +33,7 @@ export const allWidgets = window({
       },
     }),
     checkbox({
-      text: "Active custom soft guest cap",
+      text: "Activate custom soft guest cap",
       isChecked: activate,
       onChange: function (checked) {
         activate = checked;
