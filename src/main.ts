@@ -17,12 +17,12 @@ let event: any;
 
 export const allWidgets = window({
   title: "OpenRCT2 Soft Guest Cap Editor",
-  width: { value: 200, min: 200, max: 10_000 },
-  height: { value: 100, min: 100, max: 10_000 },
+  width: { value: 300, min: 300, max: 350 },
+  height: { value: 100, min: 100, max: 110 },
   content: [
     label({
       alignment: "centred",
-      text: "Enter your desired soft guest cap",
+      text: `Enter your desired soft guest cap - Current: ${currentGuestMaximum.get()}`,
       tooltip:
         "This is the maximum number of guests that will be allowed in your park",
     }),
