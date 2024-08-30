@@ -1,4 +1,4 @@
-export const name = "openrct2-soft-guess-cap-editor";
+export const name = "openrct2-soft-guest-cap-editor";
 export const version = "1.0.2";
 export const type = "intransient";
 export const license = "MIT";
