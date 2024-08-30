@@ -27,9 +27,15 @@ export const MainWindow = window({
         "This is the maximum number of guests that will be allowed in your park",
     }),
     textbox({
-      text: CurrentGuestMaximum.get().toString(),
+      text: "0",
       onChange: (text: string) => {
-        SuggestedMaxGuests.set(Number(text));
+        if (Number(text) < 0 || Number(text) > 65536) {
+          ui.showError(
+            "Input not supported",
+            "Soft Guest Cap must be between 0 and 65,536",
+          );
+          SuggestedMaxGuests.set(CurrentGuestMaximum.get());
+        } else SuggestedMaxGuests.set(Number(text));
       },
     }),
     checkbox({
