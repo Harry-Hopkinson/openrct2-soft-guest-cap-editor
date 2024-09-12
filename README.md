@@ -13,6 +13,10 @@ A plugin for OpenRCT2 that allows you to edit the soft guest cap of your park. T
 
 Download the Javascript file from the releases page and place it in your OpenRCT2 plugin directory. You can find the plugin directory by going to the toolbox icon in OpenRCT2 and clicking on "Open Custom Content Folder" and then navigate to the plugin folder.
 
+## Notes
+
+This plugin is best used with Sadret's incredible [soft guest cap editor plugin](https://github.com/Sadret/openrct2-soft-guest-cap-calculator).
+
 ## Thanks
 
 - Many thanks to Bassie - firstly I used their Flex UI library. You can find it [here](https://github.com/Basssiiie/OpenRCT2-FlexUI). Also thanks for the help with the [PR](https://github.com/OpenRCT2/OpenRCT2/pull/21521).
