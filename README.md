@@ -7,7 +7,7 @@ A plugin for OpenRCT2 that allows you to edit the soft guest cap of your park. T
 ## Features
 
 - Enter your desired `Soft Guest Cap` into the input box and then click on `Activate custom soft guest cap` for your soft guest cap to be applied.
-- Click on the `Current Guest Cap` button to recieve a notification of your current Soft Guest Cap.
+- Click on the `Current Guest Cap` button to receive a notification of your current Soft Guest Cap.
 
 ## Installation
 
