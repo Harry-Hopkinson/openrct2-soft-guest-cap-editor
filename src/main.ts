@@ -18,7 +18,7 @@ let Event: any;
 export const MainWindow = window({
   title: "Soft Guest Cap Editor",
   width: { value: 300, min: 300, max: 350 },
-  height: { value: 100, min: 100, max: 110 },
+  height: { value: 130, min: 130, max: 130 },
   content: [
     label({
       alignment: "centred",
@@ -60,6 +60,21 @@ export const MainWindow = window({
         park.postMessage(
           `Your current soft guest cap is ${park.suggestedGuestMaximum}`,
         );
+      },
+      height: "23px",
+    }),
+    button({
+      text: "Cancel Soft Guest Cap",
+      onClick: () => {
+        if (Event) {
+          Event.dispose();
+          Event = null;
+          park.postMessage("Soft Guest Cap has been cancelled");
+        } else {
+          return park.postMessage("Soft Guest Cap is not active");
+        }
+        Activate.set(false);
+        SuggestedMaxGuests.set(0);
       },
       height: "23px",
     }),

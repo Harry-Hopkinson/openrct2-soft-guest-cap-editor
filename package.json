@@ -1,6 +1,6 @@
 {
   "name": "openrct2-soft-guest-cap-editor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "license": "MIT",
   "description": "A plugin for OpenRCT2 that allows you to edit the soft guest cap.",
