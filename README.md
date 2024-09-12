@@ -19,7 +19,7 @@ Download the Javascript file from the releases page and place it in your OpenRCT
 
 ## Notes
 
-This plugin is best used with Sadret's incredible [soft guest cap editor plugin](https://github.com/Sadret/openrct2-soft-guest-cap-calculator).
+This plugin is best used with Sadret's incredible [soft guest cap calculator plugin](https://github.com/Sadret/openrct2-soft-guest-cap-calculator).
 
 ## Thanks
 
