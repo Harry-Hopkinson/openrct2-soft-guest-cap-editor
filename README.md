@@ -1,7 +1,3 @@
-## Notice
-
-This currenly only works with the development builds of OpenRCT2. You can download the latest development build [here](https://openrct2.org/downloads/develop/latest).
-
 # OpenRCT2 Soft Guest Cap Editor
 
 A plugin for OpenRCT2 that allows you to edit the soft guest cap of your park. The soft guest cap is the maximum number of guests that will spawn naturally in your park.
